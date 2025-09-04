@@ -95,4 +95,3 @@ Once you finish the basics, move on to the **AI Zero to Hero Lab**:
 
 Happy hacking! 🚀
 
-```
