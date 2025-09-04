@@ -1,9 +1,3 @@
-Here’s a draft **`README.md`** for your `zerotoherolab` root folder.
-It’s structured so learners clearly see the flow of the session, the mini-labs for each technology, and the transition into the bigger AI lab.
-
----
-
-````markdown
 # 🚀 Zero to Hero Lab
 
 Welcome to the **Zero to Hero Lab**!  
