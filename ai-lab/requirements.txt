@@ -1,0 +1,12 @@
+# Flask Web Framework - Core dependency for the web application
+flask
+
+# Werkzeug - WSGI utilities (included with Flask, but listed for clarity)
+# Used for secure filename handling and development server
+werkzeug
+
+# Python Dotenv - Read key-value pairs from a .env file and set them as environment variables
+python-dotenv
+
+# Requests - HTTP library for making requests to external APIs, like Azure OpenAI
+requests

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Main heading -->
+        <h1>AI Image Generator</h1>
+        
+        <!-- Upload form with file input and text prompt -->
+        <form id="gen-form" enctype="multipart/form-data">
+            <!-- File upload input for base image -->
+            <label for="base_image">Upload a base image:</label>
+            <input type="file" id="base_image" name="base_image" accept="image/*" required><br>
+            
+            <!-- Text input for AI generation prompt -->
+            <label for="prompt">Prompt:</label>
+            <input type="text" id="prompt" name="prompt" placeholder="Describe your image..." required><br>
+            
+            <!-- Submit button to trigger image generation -->
+            <button type="submit" id="gen-btn">Generate</button>
+        </form>
+        <div class="results-row" id="results" style="display:none;">
+            <div class="uploaded-col">
+                <h3>Uploaded</h3>
+                <img id="uploaded-img" class="thumb" />
+            </div>
+            <div class="generated-col">
+                <h3>Generated</h3>
+                <div id="skeleton" class="skeleton"></div>
+                <img id="generated-img" class="thumb" style="display:none;" />
+            </div>
+        </div>
+    </div>
+    <!-- External JavaScript files for image preview and app functionality -->
+    <script src="{{ url_for('static', filename='preview.js') }}"></script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>

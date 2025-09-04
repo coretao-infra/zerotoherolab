@@ -1,0 +1,123 @@
+/* AI Image Generator - Main Stylesheet */
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f6fb; /* Light blue-gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Main container */
+.container {
+    max-width: 900px; /* wider container */
+    margin: 40px auto; /* Center the container with top/bottom margin */
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08); /* Subtle shadow for depth */
+    padding: 32px 24px;
+}
+
+/* Main heading */
+h1 {
+    text-align: center;
+    color: #2d3748; /* Dark gray color */
+    margin-bottom: 24px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* Consistent spacing between form elements */
+}
+
+/* Input styling */
+input[type="file"], input[type="text"] {
+    padding: 8px;
+    border: 1px solid #cbd5e1; /* Light gray border */
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Submit button styling */
+button {
+    background: #4f8cff; /* Blue background */
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s; /* Smooth color transition on hover */
+}
+
+/* Button hover effect */
+button:hover {
+    background: #2563eb; /* Darker blue on hover */
+}
+
+/* Results section */
+.result {
+    margin-top: 32px;
+    text-align: center;
+}
+
+/* Generated image styling */
+.result img {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10); /* Subtle shadow for images */
+}
+
+/* Loading spinner styles */
+.loading {
+    position: relative;
+}
+.loading::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    border: 2px solid #fff;
+    border-top-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Results row for horizontal flex display */
+.results-row {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+.uploaded-col, .generated-col {
+    flex: 1 1 45%;
+    text-align: center;
+}
+.thumb, .skeleton {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Skeleton loader styles */
+.skeleton {
+    display:none;
+    width: 240px;
+    height: 240px;
+    border-radius: 8px;
+    background: linear-gradient(90deg,#e0e0e0 25%,#f8f8f8 50%,#e0e0e0 75%);
+    background-size: 400% 100%;
+    animation: shimmer 1.2s infinite;
+}
+@keyframes shimmer {
+    0% { background-position: -400px 0; }
+    100% { background-position: 400px 0; }
+}
