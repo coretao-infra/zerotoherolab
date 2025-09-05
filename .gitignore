@@ -37,5 +37,7 @@ dist/
 node_modules/
 
 # --- Generated images & uploads (kept out of repo) ------------
-final-version/static/uploads/
-final-version/static/generated/
+ai-lab/static/generated/*
+!ai-lab/static/generated/samnple.png
+ai-lab/static/uploads/*
+!ai-lab/static/uploads/samnple.png
