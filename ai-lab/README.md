@@ -41,24 +41,41 @@ client (HTML/CSS/JS)  ──►  Flask routes (main.py)  ──►  Generator se
 ---
 
 ## Quick Start
+
+### 1. Clone the repo and change to the ai-lab directory
+You can get the repo URL from GitHub Web
 ```bash
-# 1. Clone + create virtual env (optional)
-python -m venv .venv && .\.venv\Scripts\activate
+git clone ....
+cd ai-lab
+```
 
-# 2. Install deps
+### 2. Create virtual Python environment and activate it
+This is necessary so that it doesnt install unnecessary things to your computer
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+### 3. Install python libraries that are dependencies for the project
+```bash
 pip install -r requirements.txt
+```
 
-# 3. Configure environment
+### 4. Create and Edit the configuration environment file
+The app cannot run without these parameters.
+```bash
 copy .env.example .env   # then fill values (see below)
+```
 
-# 4. Run
+### 5. Run the app and launch it in your Browser
+```bash
 python main.py
 ```
-Navigate to `http://localhost:5000`.
+Navigate to `http://localhost:5000` (or the URL provided in the console)
 
 ---
 
-## Environment Variables
+## About the Environment Variables file
 Create a `.env` file in `final-version/` with:
 ```
 AZURE_OPENAI_ENDPOINT=https://<resource>.openai.azure.com/openai/deployments/<deployment>/images/generations?api-version=2025-04-01-preview
