@@ -27,3 +27,9 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 - Initial Flask app with image upload and prompt form.
 - Basic CSS styling and instant preview functionality.
 - Azure OpenAI integration (image generation / edit endpoint).
+
+---
+
+## TODO
+- Make the web form not re-upload the file when the user has not selected a new one.
+- Add housekeeping so that generated and uploaded images do not persist on the server when not needed.
