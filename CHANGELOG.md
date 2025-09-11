@@ -33,3 +33,4 @@ This project adheres to [Semantic Versioning](https://semver.org/).
 ## TODO
 - Make the web form not re-upload the file when the user has not selected a new one.
 - Add housekeeping so that generated and uploaded images do not persist on the server when not needed.
+- Make the uploaded temp files also have GUID/random filenames
