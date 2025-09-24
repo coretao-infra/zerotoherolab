@@ -60,8 +60,10 @@ cd zerotoherolab
 ### 🔹 VS Code Mini Lab
 
 1. Open this folder in VS Code
-2. Go to Extensions → search for **Prettier - Code Formatter**
+2. Go to Extensions → search for **Python**
 3. Install it and format any `.py` file
+4. Go to Extensions → search for **GitLens**
+5. Install it and explore the Git features
 
 ### 🔹 Git Mini Lab
 
