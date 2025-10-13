@@ -1,5 +1,7 @@
 # 🚀 Zero to Hero Lab
 
+![Zero to Hero Lab Banner](./assets/z2h_banner_title.png)
+
 Welcome to the **Zero to Hero Lab**!  
 In this session, you’ll go from setting up your tools to building and sharing code like a pro.  
 We’ll start with the basics — VS Code, Git, Python — and then move into a fun **AI Lab** to take things further.  
